@@ -10,7 +10,7 @@ app.get('/health', (req, res) => {
   res.status(200).json({ msg: 'Api is running' })
 })
 
-app.get('/books', (req, res) => {
+app.get('/book', (req, res) => {
   res.status(200).json({ msg: 'This is the book store' })
 })
 
