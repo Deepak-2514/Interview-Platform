@@ -14,7 +14,7 @@ app.get('/books', (req, res) => {
   res.status(200).json({ msg: 'This is the book store' })
 })
 
-if (ENV.NODE_ENV === 'production') {
+if (ENV.NODE_ENV === 'development') {
   app.use(express.static(path.join(__dirname, '../frontend/dist')))
 }
 
